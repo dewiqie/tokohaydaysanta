@@ -18,8 +18,8 @@
     @keyframes reveal{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:1023px){.desktop-cart{display:none}.catalog-bottom-space{padding-bottom:7.8rem}}@media(min-width:1024px){.mobile-cart{display:none}}
   </style>
-  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
   <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
   <script src="/_sdk/0ddbbee1c66b1212.editing_sdk.js" type="text/javascript" integrity="sha512-HQn5LM1yruQSbY78ATUril6QeOJ9xj7KqO64ltLtb4vBwI5Qv3/tloFFOndBPZTNZoeV5xKzuth5y6FTi9crsg=="></script>
   <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript" integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
@@ -27,10 +27,13 @@
  <body data-template-id="__page-root">
   <div class="page-shell">
    <header data-template-id="site-header" class="canva-header sticky top-0 z-30 border-b border-[#e7d9f4] bg-[#f7f1ff]/95 backdrop-blur" style="background: rgb(247, 241, 255);">
-    <div class="mx-auto flex w-full max-w-7xl flex-wrap items-center gap-3 px-4 py-3 sm:px-6"><button type="button" class="shrink-0 text-left" aria-label="Kembali ke katalog" onclick="showView('catalog')"> <img data-template-id="brand-logo" class="canva-image h-16 w-24 object-contain sm:h-[72px] sm:w-28" loading="lazy" src="https://www.image2url.com/r2/default/images/1789916383563-036db35e-af64-4194-b2e2-d01bea798496.png" alt="Logo toko Hayday Santa"> </button>
-     <nav aria-label="Navigasi toko" class="order-3 flex w-full gap-2 overflow-x-auto sm:order-none sm:w-auto"><button data-template-id="nav-catalog" class="canva-button nav-button whitespace-nowrap rounded-full border border-[#d9c6ee] bg-white px-4 py-2 text-sm font-bold" data-view="catalog" type="button" style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Katalog</button> <button data-template-id="nav-follow" id="nav-follow" class="canva-button whitespace-nowrap rounded-full border border-[#d9c6ee] bg-white px-4 py-2 text-sm font-bold" type="button" aria-expanded="false" aria-controls="social-menu" style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Ikuti Kami</button> <a data-template-id="nav-proof" class="canva-link whitespace-nowrap rounded-full border border-[#d9c6ee] bg-white px-4 py-2 text-sm font-bold" href="https://padlet.com/haydaysanta/buyer-s-proof-ngdmp9ngv7apnt5a" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Proof</a>
+    <div class="mx-auto flex w-full max-w-7xl flex-wrap items-center gap-3 px-4 py-3 sm:px-6">
+     <button type="button" class="shrink-0 text-left" aria-label="Kembali ke katalog" onclick="showView('catalog')"> <img data-template-id="brand-logo" class="canva-image h-16 w-24 object-contain sm:h-[72px] sm:w-28" loading="lazy" src="https://www.image2url.com/r2/default/images/1789916383563-036db35e-af64-4194-b2e2-d01bea798496.png" alt="Logo toko Hayday Santa"> </button>
+     <nav aria-label="Navigasi toko" class="order-3 flex w-full gap-2 overflow-x-auto sm:order-none sm:w-auto">
+      <button data-template-id="nav-catalog" class="canva-button nav-button whitespace-nowrap rounded-full border border-[#d9c6ee] bg-white px-4 py-2 text-sm font-bold" data-view="catalog" type="button" style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Katalog</button> <button data-template-id="nav-follow" id="nav-follow" class="canva-button whitespace-nowrap rounded-full border border-[#d9c6ee] bg-white px-4 py-2 text-sm font-bold" type="button" aria-expanded="false" aria-controls="social-menu" style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Ikuti Kami</button> <a data-template-id="nav-proof" class="canva-link whitespace-nowrap rounded-full border border-[#d9c6ee] bg-white px-4 py-2 text-sm font-bold" href="https://padlet.com/haydaysanta/buyer-s-proof-ngdmp9ngv7apnt5a" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Proof</a>
       <div id="social-menu" class="absolute left-4 top-full z-40 mt-2 hidden w-[min(92vw,420px)] rounded-2xl border border-[#e7d9f4] bg-white p-3 shadow-xl sm:left-auto" role="menu">
-       <div class="grid grid-cols-2 gap-2 sm:grid-cols-5"><a class="social-link" href="https://www.instagram.com/hayday.santa?stkn=MXUyeWY3OWRlYXg0cA==" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="instagram-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906848900-d043e746-5163-4cfe-9907-9ef3963b89df.png" alt="Instagram Hayday Santa"><span data-template-id="instagram-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Instagram</span></a> <a class="social-link" href="https://www.facebook.com/share/1ENPkpvP13/" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="facebook-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906910034-ddf1223b-61a8-4110-88b4-45bbfeddb3a4.png" alt="Facebook Hayday Santa"><span data-template-id="facebook-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Facebook</span></a> <a class="social-link" href="https://www.tiktok.com/@haydaysanta?_r=1&amp;_t=ZS-99uPPSz4f24" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="tiktok-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906934693-3e0a5279-f6d0-4f90-b99c-17a844c27b0e.png" alt="TikTok Hayday Santa"><span data-template-id="tiktok-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">TikTok</span></a> <a class="social-link" href="https://wa.me/6289686929599" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="whatsapp-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906957857-3a50a52c-e3f2-45e8-b46e-310efd1c92ce.png" alt="WhatsApp Hayday Santa"><span data-template-id="whatsapp-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">WhatsApp</span></a> <a class="social-link" href="https://x.com/haydaysanta" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="twitter-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906977291-10f95de1-9c8a-4601-944c-704b658733d0.png" alt="Twitter Hayday Santa"><span data-template-id="twitter-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Twitter</span></a>
+       <div class="grid grid-cols-2 gap-2 sm:grid-cols-5">
+        <a class="social-link" href="https://www.instagram.com/hayday.santa?stkn=MXUyeWY3OWRlYXg0cA==" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="instagram-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906848900-d043e746-5163-4cfe-9907-9ef3963b89df.png" alt="Instagram Hayday Santa"><span data-template-id="instagram-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Instagram</span></a> <a class="social-link" href="https://www.facebook.com/share/1ENPkpvP13/" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="facebook-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906910034-ddf1223b-61a8-4110-88b4-45bbfeddb3a4.png" alt="Facebook Hayday Santa"><span data-template-id="facebook-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Facebook</span></a> <a class="social-link" href="https://www.tiktok.com/@haydaysanta?_r=1&amp;_t=ZS-99uPPSz4f24" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="tiktok-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906934693-3e0a5279-f6d0-4f90-b99c-17a844c27b0e.png" alt="TikTok Hayday Santa"><span data-template-id="tiktok-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">TikTok</span></a> <a class="social-link" href="https://wa.me/6289686929599" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="whatsapp-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906957857-3a50a52c-e3f2-45e8-b46e-310efd1c92ce.png" alt="WhatsApp Hayday Santa"><span data-template-id="whatsapp-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">WhatsApp</span></a> <a class="social-link" href="https://x.com/haydaysanta" target="_blank" rel="noopener noreferrer" role="menuitem"><img data-template-id="twitter-social-image" class="canva-image mx-auto h-10 w-10 rounded-xl object-cover" loading="lazy" src="https://www.image2url.com/r2/default/images/1789906977291-10f95de1-9c8a-4601-944c-704b658733d0.png" alt="Twitter Hayday Santa"><span data-template-id="twitter-social-name" class="canva-text mt-1 block text-center text-xs font-bold" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Twitter</span></a>
        </div>
       </div>
      </nav><button data-template-id="nav-cart" class="canva-button nav-button relative order-2 ml-auto grid h-11 w-11 shrink-0 place-items-center rounded-full border border-[#d9c6ee] bg-white text-[#6e3aa5] shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:order-none" data-view="cart" type="button" aria-label="Buka keranjang" style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 700;"><i data-lucide="shopping-cart" class="h-5 w-5"></i><span data-template-id="nav-cart-label" class="sr-only" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Keranjang</span><span id="header-cart-count" class="absolute -right-1 -top-1 min-w-5 rounded-full bg-[#6e3aa5] px-1.5 py-0.5 text-[10px] font-extrabold text-white">0</span></button>
@@ -47,9 +50,11 @@
       <div class="catalog-bottom-space min-w-0">
        <section data-template-id="filter-panel" class="canva-panel soft-shadow mb-5 rounded-[22px] border border-[#e7d9f4] bg-white p-4" style="background: rgb(255, 255, 255);">
         <div class="mb-4 grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(220px,1.5fr)_auto] md:items-end">
-         <div class="min-w-0"><label data-template-id="machine-label" class="canva-text mb-1 block text-xs font-bold" for="machine-filter" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Mesin</label> <select id="machine-filter" class="w-full rounded-lg border border-[#ddcdea] bg-white p-2.5 text-sm"></select>
+         <div class="min-w-0">
+          <label data-template-id="machine-label" class="canva-text mb-1 block text-xs font-bold" for="machine-filter" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Mesin</label> <select id="machine-filter" class="w-full rounded-lg border border-[#ddcdea] bg-white p-2.5 text-sm"></select>
          </div>
-         <div class="min-w-0"><label data-template-id="level-label" class="canva-text mb-1 block text-xs font-bold" for="level-filter" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Level</label> <select id="level-filter" class="w-full rounded-lg border border-[#ddcdea] bg-white p-2.5 text-sm"></select>
+         <div class="min-w-0">
+          <label data-template-id="level-label" class="canva-text mb-1 block text-xs font-bold" for="level-filter" style="color: rgb(30, 23, 39); font-weight: 700; font-style: normal; font-size: 16px;">Level</label> <select id="level-filter" class="w-full rounded-lg border border-[#ddcdea] bg-white p-2.5 text-sm"></select>
          </div><label class="relative flex w-full min-w-0 items-center self-end" for="search-input"> <i data-lucide="search" class="pointer-events-none absolute left-3 h-4 w-4 text-[#6e3aa5]"></i> <input data-template-id="search-input" class="canva-input w-full rounded-xl border border-[#ddcdea] bg-white py-2.5 pl-10 pr-4 text-sm shadow-sm" id="search-input" type="search" placeholder="cari produk.." style="background: rgb(255, 255, 255); color: rgb(30, 23, 39); font-weight: 400; font-style: normal; font-size: 16px;"></label> <button data-template-id="reset-filter-button" class="canva-button w-full rounded-lg bg-[#eee2ff] px-4 py-2.5 text-sm font-bold text-[#542681] hover:bg-[#e3d2fb] md:w-auto" type="button" id="reset-filters" style="background: rgb(238, 226, 255); color: rgb(84, 38, 129); font-weight: 700; font-style: normal; font-size: 16px;">Reset filter</button>
         </div>
        </section>
@@ -57,7 +62,8 @@
         <p id="results-info" class="text-sm font-semibold" aria-live="polite"></p><span data-template-id="scroll-hint" class="canva-tag rounded-full bg-[#eee2ff] px-3 py-1 text-xs font-bold text-[#542681]" style="background: rgb(238, 226, 255); color: rgb(84, 38, 129); font-weight: 700; font-style: normal; font-size: 16px;">Scroll untuk menjelajah</span>
        </div>
        <div id="product-grid" class="grid grid-cols-1 gap-3 md:grid-cols-2"></div>
-       <div id="catalog-loader" class="mt-6 flex flex-col items-center gap-2"><button id="load-more" data-template-id="load-more-button" class="canva-button load-more rounded-xl bg-[#6e3aa5] px-5 py-3 text-sm font-bold text-white shadow-sm hover:bg-[#542681]" type="button" style="background: rgb(110, 58, 165); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Muat lebih banyak</button>
+       <div id="catalog-loader" class="mt-6 flex flex-col items-center gap-2">
+        <button id="load-more" data-template-id="load-more-button" class="canva-button load-more rounded-xl bg-[#6e3aa5] px-5 py-3 text-sm font-bold text-white shadow-sm hover:bg-[#542681]" type="button" style="background: rgb(110, 58, 165); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Muat lebih banyak</button>
         <p id="catalog-progress" class="text-xs font-semibold text-[#76548d]" aria-live="polite"></p>
        </div>
       </div>
@@ -106,14 +112,13 @@
      </div>
      <div id="checkout-items" class="mt-5 space-y-2"></div><label data-template-id="customer-note-label" class="canva-text mt-5 block text-sm font-extrabold" for="customer-note" style="color: rgb(30, 23, 39); font-weight: 800; font-style: normal; font-size: 16px;">Catatan pelanggan (opsional)</label> <textarea id="customer-note" class="mt-2 min-h-24 w-full rounded-xl border border-[#ddcdea] bg-white p-3" maxlength="500"></textarea>
      <div class="mt-5 rounded-xl bg-[#fff2bd] p-4">
-      <div class="flex justify-between text-sm">
-       <span data-template-id="checkout-types-label" class="canva-text" style="color: rgb(30, 23, 39); font-weight: 400; font-style: normal; font-size: 16px;">Total jenis item</span><strong id="checkout-types">0</strong>
+      <div class="flex justify-between text-sm"><span data-template-id="checkout-types-label" class="canva-text" style="color: rgb(30, 23, 39); font-weight: 400; font-style: normal; font-size: 16px;">Total jenis item</span><strong id="checkout-types">0</strong>
       </div>
-      <div class="mt-2 flex justify-between text-sm">
-       <span data-template-id="checkout-quantity-label" class="canva-text" style="color: rgb(30, 23, 39); font-weight: 400; font-style: normal; font-size: 16px;">Total kuantitas</span><strong id="checkout-quantity">0</strong>
+      <div class="mt-2 flex justify-between text-sm"><span data-template-id="checkout-quantity-label" class="canva-text" style="color: rgb(30, 23, 39); font-weight: 400; font-style: normal; font-size: 16px;">Total kuantitas</span><strong id="checkout-quantity">0</strong>
       </div>
      </div>
-     <div class="mt-5"><button data-template-id="whatsapp-button" class="canva-button w-full rounded-xl bg-[#6e3aa5] px-4 py-3 font-extrabold text-white hover:bg-[#542681]" type="button" id="whatsapp-order" style="background: rgb(110, 58, 165); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Pesan via WhatsApp</button>
+     <div class="mt-5">
+      <button data-template-id="whatsapp-button" class="canva-button w-full rounded-xl bg-[#6e3aa5] px-4 py-3 font-extrabold text-white hover:bg-[#542681]" type="button" id="whatsapp-order" style="background: rgb(110, 58, 165); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Pesan via WhatsApp</button>
      </div>
     </div>
    </div>
@@ -122,8 +127,7 @@
   <template id="product-template">
    <article data-template-id="product-card" class="canva-card catalog-card flex items-center gap-3 rounded-[16px] bg-white p-3">
     <div class="product-thumb">
-     <div class="product-fallback">
-      <i data-lucide="package" class="h-7 w-7"></i>
+     <div class="product-fallback"><i data-lucide="package" class="h-7 w-7"></i>
      </div>
     </div>
     <div class="min-w-0 flex-1">
@@ -131,15 +135,15 @@
      <p data-template-id="product-level" class="canva-text product-level mt-1 text-[10px] font-semibold text-[#6c5b76]"></p>
      <p data-template-id="product-machine" class="canva-text product-machine mt-0.5 truncate text-[10px] text-[#6c5b76]"></p>
     </div>
-    <div class="flex shrink-0 items-center gap-1.5" aria-label="Kontrol jumlah"><button class="qty-button qty-minus" type="button" aria-label="Kurangi 10">−</button> <span class="product-qty min-w-5 text-center text-xs font-extrabold" aria-live="polite">0</span> <button class="qty-button qty-plus" type="button" aria-label="Tambah 10">+</button>
+    <div class="flex shrink-0 items-center gap-1.5" aria-label="Kontrol jumlah">
+     <button class="qty-button qty-minus" type="button" aria-label="Kurangi 10">−</button> <span class="product-qty min-w-5 text-center text-xs font-extrabold" aria-live="polite">0</span> <button class="qty-button qty-plus" type="button" aria-label="Tambah 10">+</button>
     </div>
    </article>
   </template>
   <template id="cart-item-template">
    <article data-template-id="cart-row" class="canva-card cart-row rounded-[18px] bg-white p-4 shadow-sm">
     <div class="flex gap-3">
-     <div class="cart-icon grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-[#eee2ff] text-[#6e3aa5]">
-      <i data-lucide="package" class="h-5 w-5"></i>
+     <div class="cart-icon grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-[#eee2ff] text-[#6e3aa5]"><i data-lucide="package" class="h-5 w-5"></i>
      </div>
      <div class="min-w-0 flex-1">
       <h3 data-template-id="cart-product-name" class="canva-text cart-name font-extrabold"></h3>
@@ -147,7 +151,8 @@
      </div><button class="cart-remove grid h-9 w-9 place-items-center rounded-full bg-[#eee2ff] text-[#542681]" type="button" aria-label="Hapus item"><i data-lucide="trash-2" class="h-4 w-4"></i></button>
     </div>
     <div class="mt-3 flex items-center justify-between">
-     <div class="flex items-center gap-2"><button class="qty-button qty-minus cart-minus" type="button" aria-label="Kurangi 10">−</button> <span class="cart-qty min-w-8 text-center font-extrabold"></span> <button class="qty-button cart-plus" type="button" aria-label="Tambah 10">+</button>
+     <div class="flex items-center gap-2">
+      <button class="qty-button qty-minus cart-minus" type="button" aria-label="Kurangi 10">−</button> <span class="cart-qty min-w-8 text-center font-extrabold"></span> <button class="qty-button cart-plus" type="button" aria-label="Tambah 10">+</button>
      </div><span data-template-id="cart-quantity-caption" class="canva-text text-xs font-bold text-[#6e3aa5]"></span>
     </div>
    </article>
@@ -688,9 +693,21 @@ Fruity Milkshake|126|Milkshake Bar`.trim();
     }
 
     function waMessage(order) {
-      return JSON.parse(order.items_json)
-        .map(item => `${item.name} = ${item.quantity}`)
-        .join("%0A");
+      const items = JSON.parse(order.items_json);
+      const total = totals(items);
+      const message = [
+        "Halo Hayday Santa!",
+        `Nomor pesanan: ${generateOrderNumber()}`,
+        "",
+        "Daftar item:",
+        ...items.map(item => `• ${item.name}= ${item.quantity}`),
+        "",
+        `Total jenis item: ${total.types}`,
+        `Total Produk: ${total.quantity}`,
+        "",
+        "Apakah boleh bantu di infokan harganya minsan?"
+      ].join("\n");
+      return encodeURIComponent(message);
     }
 
     function openWA(order) {
