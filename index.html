@@ -527,10 +527,31 @@ Fruity Milkshake|126|Milkshake Bar`.trim();
       const levelIndex = column("level");
       const machineIndex = column("mesin", "machine");
       const imageIndex = column("gambar", "image", "image url", "imageurl");
-      products = rows.filter(row => row[nameIndex]).map((row, index) => ({
-        id:`product-${index}`, name:String(row[nameIndex]).trim(), level:Number(row[levelIndex]) || 0,
-        machine:String(row[machineIndex] || "").trim(), image:row[imageIndex] || ""
-      }));
+      const uniqueProducts = new Map();
+
+rows
+  .filter(row => row[nameIndex])
+  .forEach(row => {
+    const name = String(row[nameIndex]).trim();
+
+    // Abaikan nama kosong dan samakan huruf besar/kecil
+    const key = name.toLowerCase();
+
+    // Simpan hanya produk pertama dengan nama tersebut
+    if (!uniqueProducts.has(key)) {
+      uniqueProducts.set(key, {
+        name: name,
+        level: Number(row[levelIndex]) || 0,
+        machine: String(row[machineIndex] || "").trim(),
+        image: String(row[imageIndex] || "").trim()
+      });
+    }
+  });
+
+products = Array.from(uniqueProducts.values()).map((product, index) => ({
+  id: `product-${index}`,
+  ...product
+}));
       const pastaSalad = products.find(product => product.name.trim().toLowerCase() === "pasta salad");
       if (pastaSalad) {
         pastaSalad.level = 67;
